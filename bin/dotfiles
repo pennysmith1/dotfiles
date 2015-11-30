@@ -146,7 +146,7 @@ if [ ! -d .git ]; then
 
     # Fetch the repo
     e_header "Fetching repo..."
-    git clone https://github.com/whitneyit/dotfiles.git temp
+    git clone https://github.com/pennysmith1/dotfiles.git temp
 
     # Info the user where the repo is located
     e_info "Repo located at: \"$DOTFILES_DIRECTORY\""
@@ -217,7 +217,7 @@ if [ ! -d .git ]; then
     # Now we modify the origin url to use our `ssh` address. We do this so that
     # when we modify the repo we don't have to worry about passwords
     e_info "Updating origin url..."
-    git remote set-url origin git@github.com:whitneyit/dotfiles.git
+    git remote set-url origin git@github.com:pennysmith1/dotfiles.git
 
     # Change the permissions again now that the we have just created some files.
     if [ "$(uname -s | grep -c CYGWIN)" -gt 0 ]; then
